@@ -10,7 +10,7 @@ class Student
   end
   def save
     # saves an instance of the Student class to the database
-    sql = <<-SQL 
+    sql = <<-SQL
       INSERT INTO students(name, grade)
       VALUES(?,?)
       SQL
