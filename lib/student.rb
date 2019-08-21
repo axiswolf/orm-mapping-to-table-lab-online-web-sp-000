@@ -8,7 +8,9 @@ class Student
     @name = name
     @grade = grade
   end
-
+  def save
+    # saves an instance of the Student class to the database
+  end
   def self.create_table
     # creates the students table in the database
   end
