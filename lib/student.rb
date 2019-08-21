@@ -34,8 +34,11 @@ class Student
     # drops the students table form the database
   end
 
-  def self.create
+  def self.create(name:, grade:)
     # returns the new object that it instantiated
+    student = Student.new(name, grade)
+    student.save
+    student
   end
 
 end
